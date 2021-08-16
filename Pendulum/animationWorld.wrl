@@ -1,0 +1,23 @@
+#VRML V2.0 utf8
+
+DEF SKY Background {
+  skyColor 0.4 1 1
+}
+DEF SENSOR CylinderSensor {
+}
+DEF CAMERA Viewpoint {
+  position 0 0 20
+}
+Transform {
+  children DEF SHAPE Shape {
+    appearance Appearance {
+      material DEF MATERIAl Material {
+        diffuseColor 0 0 1
+      }
+    }
+    geometry DEF CYLINDER Cylinder {
+      radius 0.5
+      height 8.5
+    }
+  }
+}
